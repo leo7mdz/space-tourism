@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem 1.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+}
+
+@media screen and (min-width:991px) {
+    .container {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+.containerText {
+    text-align: center;
+}
+
+.title {
+    color: #d0d6f9;
+
+}
+
+.paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.span {
+    font-size: 6rem;
+    margin: 0;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+}
+
+.explore {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    transition: box-shadow .3s;
+}
+
+.explore:hover {
+    box-shadow: 0 0 0 1.6rem rgba(214, 209, 209, .3);
+
+
+
+}
+
+
+
+.exploreLink {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .span {
+        font-size: 9.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .paragraph {
+        width: 450px;
+    }
+
+    .explore {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .exploreLink {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width:991px) {}

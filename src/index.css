@@ -1,0 +1,30 @@
+@import './reset-css/normalize.css';
+
+html {
+  box-sizing: border-box;
+  color: white;
+  /* font-family: 'Barlow Condensed', sans-serif; */
+  /* font-family: 'Bellefair', serif; */
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p {
+  color: #d0d6f9;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
