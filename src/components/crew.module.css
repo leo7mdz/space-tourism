@@ -1,0 +1,152 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 7rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        padding-left: 4rem;
+        padding-right: 4rem;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+    }
+}
+
+.span {
+    font-size: 1.4rem;
+    color: grey;
+    margin-right: .4rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg {
+    border-bottom: .1rem solid rgba(255, 255, 255, .3);
+}
+
+.imgPerson {
+    width: 70%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.personList {
+    display: flex;
+    justify-content: center;
+}
+
+.personItem {
+    margin-top: 1.5rem;
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+
+.personItem:hover {
+    color: rgb(90, 90, 165);
+}
+
+.personText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.role {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: .3rem;
+    font-family: 'bellefair', serif;
+}
+
+.bio {
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    letter-spacing: .06rem;
+    line-height: 1.4;
+}
+
+@media screen and (min-width:768px) {
+    .personText {
+        order: -1;
+    }
+
+    .role {
+        font-size: 1.8rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .bio {
+        width: 60%;
+        margin: 2rem auto;
+
+    }
+
+    .containerPerson {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personList {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (min-width:991px) {
+    .containerBody {
+        width: 100%;
+        height: 80vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .personText {
+        width: 50%;
+    }
+
+    .bio {
+        width: 90%;
+        letter-spacing: .1rem;
+    }
+}
