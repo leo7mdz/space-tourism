@@ -1,0 +1,166 @@
+.container {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 7rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        align-items: flex-start;
+        padding-left: 4rem;
+
+    }
+}
+
+@media screen and (min-width:991px) {
+    .container {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: white;
+
+}
+
+.span {
+    color: grey;
+    margin-right: .4rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgPlanet {
+    width: 65%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.planetList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.planetItem {
+    text-transform: uppercase;
+    padding-bottom: .3rem;
+    position: relative;
+    color: #d0d6f9;
+    cursor: pointer;
+
+}
+
+.planetItem::before {
+    content: "";
+    position: absolute;
+    border-bottom: .15rem solid white;
+    border-radius: 1rem;
+    bottom: -.5rem;
+    left: 0;
+    color: white;
+    width: 0;
+    height: .17rem;
+    transition: width .2s;
+
+}
+
+.planetItem:hover.planetItem::before {
+    width: 100%;
+    transition: width .3s easy-in;
+
+
+}
+
+.planetText {
+    text-align: center;
+}
+
+.planetName {
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Bellefair', serif;
+    margin: 1.3rem auto;
+}
+
+.planetDescription {
+    line-height: 1.4;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid white;
+    letter-spacing: .1rem;
+
+
+}
+
+.distanceTitle,
+.travelTitle {
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+}
+
+.distance,
+.travel {
+    font-size: 2rem;
+    margin-top: .5rem;
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+    .planetDescription {
+        font-size: 1.3rem;
+    }
+
+    .containerInfo {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .containerBody {
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .imgPlanet {
+        width: 75%;
+    }
+
+    .planetText {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (min-width:1240px) {
+    .planetDescription {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .imgPlanet {
+        width: 80%;
+    }
+
+}
