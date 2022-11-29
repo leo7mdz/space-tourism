@@ -8,19 +8,17 @@ import Technology from "./pages/Technology";
 
 function App() {
   return (
-    <div className="App">
-      <HashRouter>
-        <div className="App">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/destination" element={<Destination />} />
-            <Route path="crew" element={<Crew />} />
-            <Route path="/technology" element={<Technology />} />
-          </Routes>
-        </div>
-      </HashRouter>
-    </div>
+    <HashRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 
