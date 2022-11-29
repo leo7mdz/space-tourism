@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
 import Crew from "./pages/Crew";
@@ -9,7 +9,7 @@ import Technology from "./pages/Technology";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <Header />
           <Routes>
@@ -19,7 +19,7 @@ function App() {
             <Route path="/technology" element={<Technology />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
